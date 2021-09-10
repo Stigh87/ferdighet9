@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    
+    <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
+    <!-- <input type="text" onchange="test(this)" oninput="test(this)" />
+    <h3 onmouseover="test(this)" onmouseout="test(this)">Test test test -->
+    </hr>
+    <p><b>Oppgave:</b> Skriv om eksemplet fra ferdighet 2a på nytt. 
+        <br>Gjør koden enklere ved å kun bruke én funksjon og la denne bruke en parameter. 
+    </p>
+        <div id="OnLoad" onload="test(this)"></div>
+        <input type="text" id="OnChange" onchange="test(this)" oninput="test(this)"/>
+        <div id="MouseOver" onmouseover="test(this)" onmouseout="test(this)">MOUSEOVERE HERE</div>
+        <h2 id="info"></h2>
+
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
+    
+    
+<script>
+
+
+    function test(){
+        info.innerHTML += '<li>onload</li>';
+        onchange (info.innerHTML += '<li>onchange</li>');
+        oninput (info.innerHTML += '<li>oninput</li>');
+        onmouseover (info.innerHTML += '<li>onmouseover</li>');
+        onmouseout (info.innerHTML += '<li>onmouseout</li>');
+        
+    }
+
+</script>
+
+
+
+    <!-- <script>
+        var info = document.getElementById('info')
+        function testOnLoad() {
+            document.getElementById('info').innerHTML += '<li>onload</li>';
+        }
+        function testOnChange() {
+            document.getElementById('info').innerHTML += '<li>onchange</li>';
+        }
+        function testOnInput() {
+            document.getElementById('info').innerHTML += '<li>oninput</li>';
+        }
+        function testOnMouseOver() {
+            document.getElementById('info').innerHTML += '<li>onmouseover</li>';
+        }
+        function testOnMouseOut() {
+            document.getElementById('info').innerHTML += '<li>onmouseout</li>';
+        }
+    </script> -->
+
+</body>
+
+</html>
